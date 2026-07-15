@@ -1,0 +1,32 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+*.log
+*.tmp
+*.bak
+
+# Virtual environments
+.venv/
+venv/
+.env/
+.env
+.env.*
+
+# Pipeline outputs
+output/
+
+# Python tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pycache_tmp/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+*.swp
+.vscode/
