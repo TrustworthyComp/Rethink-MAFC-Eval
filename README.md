@@ -105,6 +105,19 @@ python scoring/embed_match.py --help
 python run.py --help
 ```
 
+## 📚 Citation
+
+If you find this work useful, please cite our paper presented at ACM MM 2026:
+
+```bibtex
+@inproceedings{rethink_mafc_eval_2026,
+  title={Novel Claim or Déjà Vu? Rethinking "Contamination-Free" Dynamic Evaluation for Multimodal Automated Fact-Checking},
+  author={He, Haorui and Chen, Xinwen and Wen, Dacheng and Cheng, Reynold and Lau, Francis C. M. and Li, Yupeng},
+  booktitle={Proc.~of MM},
+  year={2026},
+}
+```
+
 ## 🙏 Acknowledgements
 
 - **Data collection pipeline**: We referred to [MisinfoMe](https://github.com/MartinoMensio/MisinfoMe) and [CIMPLE Knowledge Base](https://github.com/CIMPLE-project/knowledge-base) for claim review data collection.

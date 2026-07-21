@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Novel Claim or Déjà Vu? Rethinking &quot;Contamination-Free&quot; Dynamic Evaluation for Multimodal Automated Fact-Checking">
+  <meta name="keywords" content="Multimodal Automated Fact-Checking, Dynamic Evaluation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Novel Claim or Déjà Vu? Rethinking "Contamination-Free" Dynamic Evaluation for Multimodal Automated Fact-Checking</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <style>
+    .finding-item .finding-row {
+      display: flex;
+      align-items: flex-start;
+    }
+    .finding-item .finding-label {
+      flex: 0 0 auto;
+      margin-right: 0.8em;
+    }
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Novel Claim or Déjà Vu? Rethinking "Contamination-Free" Dynamic Evaluation for Multimodal Automated Fact-Checking</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://harryhe11.github.io/">Haorui He</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="">Xinwen Chen</a><sup>3</sup>,</span>
+            <span class="author-block">
+              <a href="https://changywen.github.io/">Dacheng Wen</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.reynold.hku.hk/">Reynold Cheng</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://i.cs.hku.hk/~fcmlau/">Francis C. M. Lau</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://imd.hkbu.edu.hk/faculty-member/Prof-Yupeng-LI.html">Yupeng Li</a><sup>1,*</sup>
+            </span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Department of Interactive Media, Hong Kong Baptist University</span><br>
+            <span class="author-block"><sup>2</sup>Department of Computer Science, The University of Hong Kong</span><br>
+            <span class="author-block"><sup>3</sup>Beijing Normal-Hong Kong Baptist University</span><br>
+            <span class="author-block"><sup>*</sup>Correspondence: <a href="mailto:ivanypli@gmail.com">ivanypli@gmail.com</a></span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/TrustworthyComp/Rethink-MAFC-Eval"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <!-- Appendix Link. -->
+              <span class="link-block">
+                <a href=" "
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="subtitle has-text-centered">
+        This work revisits the assumption that dynamic evaluation is inherently contamination-free for multimodal automated fact-checking (MAFC). We empirically study contamination risks in both static and dynamic benchmarks and reveal their impact on MAFC evaluation.
+      </h2>
+      <div class="has-text-centered">
+        <img src="./static/images/live_figs.png" class="teaser-image" alt="Rethink-MAFC-Eval Dynamic Evaluation Framework Overview." style="max-width: 72%; height: auto;"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Multimodal automated fact-checking (MAFC) verifies claims by
+            retrieving and reasoning over external evidence. However, most existing static benchmarks risk contamination: they primarily consist
+            of outdated claims verifiable using an LLM's internal knowledge
+            without external evidence. This can inflate performance estimates
+            and fail to reflect true capability on novel claims that require up-to-date information. 
+            To address this, emerging dynamic benchmarks
+            collect claims published after LLMs' knowledge cut-off dates, assuming they are uncontaminated. This work revisits this assumption by
+            empirically studying contamination risks in both the state-of-the-art (SOTA) static AVeriTeC benchmark and our newly constructed
+            dynamic ClaimReview2025Q4 benchmark, as well as their impact
+            on MAFC evaluation.
+          </p>
+          <p>
+          Our experiments yield 16 findings, highlighting three key results: (1) Dynamic evaluation reduces but does not
+          eliminate contamination risks, as 17.09%-29.30% of post-cut-off
+          claims remain potentially contaminated; (2) Many newly published
+          claims can be verified either directly or by synthesizing multiple
+          pieces of public knowledge available before the cut-off; and (3) Contamination can induce statistically significant inflation in MAFC
+          performance, increasing Macro-F1 by up to 11.34 points and distorting system rankings. In light of these findings, we re-evaluate SOTA
+          LLMs under a strictly contamination-controlled setting. Our study
+          provides practical guidelines for trustworthy MAFC evaluation.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Contamination Detection Pipeline</h2>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <img src="./static/images/pipeline.png" class="teaser-image" alt="An overview of contamination detection via an evidence sufficiency evaluation pipeline." style="max-width: 100%; width: 100%; height: auto;"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="empricial-findings">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Empirical Findings</h2>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>We summarize our experimental findings according to RQ1-RQ4.</p>
+
+          <p id="rq1-findings"><strong>RQ1: To what extent are existing static and dynamic MAFC benchmarks contaminated?</strong></p>
+          <ul>
+            <li class="finding-item"><span class="finding-row"><strong class="finding-label">Finding 1.1:</strong><span>The dynamic benchmark can effectively alleviate data contamination.</span></span></li>
+            <li class="finding-item"><span class="finding-row"><strong class="finding-label">Finding 1.2:</strong><span>Strong contamination signals are widespread across LLMs on AVeriTeC; on ClaimReview2025Q4, peak scores are concentrated in particular models.</span></span></li>
+            <li class="finding-item"><span class="finding-row"><strong class="finding-label">Finding 1.3:</strong><span>A non-trivial portion of claims in the dynamic benchmark still faces contamination risk across all models.</span></span></li>
+            <li class="finding-item"><span class="finding-row"><strong class="finding-label">Finding 1.4:</strong><span>Semantic metrics identify a markedly larger contaminated subset than lexical matching.</span></span></li>
+            <li class="finding-item"><span class="finding-row"><strong class="finding-label">Finding 1.5:</strong><span>Qwen3.5-122B-A10B is the most contaminated model on the dynamic benchmark.</span></span></li>
+            <li class="finding-item"><span class="finding-row"><strong class="finding-label">Finding 1.6:</strong><span>A subset of claims in the dynamic benchmark exhibits extremely high contamination risk.</span></span></li>
+          </ul>
+
+          <p id="rq2-findings"><strong>RQ2: How does contamination arise in dynamic benchmarks?</strong></p>
+          <ul>
+            <li class="finding-item"><span class="finding-row"><strong class="finding-label">Finding 2.1:</strong><span>Contamination arises from claims that directly reference facts available before the LLMs' knowledge cut-off dates.</span></span></li>
+            <li class="finding-item"><span class="finding-row"><strong class="finding-label">Finding 2.2:</strong><span>Contamination can also result from synthesizing multiple pre-cut-off facts.</span></span></li>
+          </ul>
+
+          <p id="rq3-findings"><strong>RQ3: How does contamination affect MAFC performance evaluation?</strong></p>
+          <ul>
+            <li class="finding-item"><span class="finding-row"><strong class="finding-label">Finding 3.1:</strong><span>Contamination can significantly inflate evaluation results.</span></span></li>
+            <li class="finding-item"><span class="finding-row"><strong class="finding-label">Finding 3.2:</strong><span>The magnitude of this inflation varies substantially across models.</span></span></li>
+            <li class="finding-item"><span class="finding-row"><strong class="finding-label">Finding 3.3:</strong><span>The most contaminated model also suffers the largest Accuracy decline.</span></span></li>
+            <li class="finding-item"><span class="finding-row"><strong class="finding-label">Finding 3.4:</strong><span>Contamination can distort MAFC performance rankings of LLMs.</span></span></li>
+            <li class="finding-item"><span class="finding-row"><strong class="finding-label">Finding 3.5:</strong><span>Contamination enables models to retrieve relevant evidence more precisely, bypassing comprehensive exploration of the evidence space.</span></span></li>
+          </ul>
+
+          <p id="rq4-findings"><strong>RQ4: How do SOTA LLMs perform under contamination-controlled MAFC evaluation?</strong></p>
+          <ul>
+            <li class="finding-item"><span class="finding-row"><strong class="finding-label">Finding 4.1:</strong><span>The evaluation set exhibits noticeable label imbalance.</span></span></li>
+            <li class="finding-item"><span class="finding-row"><strong class="finding-label">Finding 4.2:</strong><span>DeepSeek-V3.2 achieves the strongest overall MAFC performance in the contamination-controlled setting.</span></span></li>
+            <li class="finding-item"><span class="finding-row"><strong class="finding-label">Finding 4.3:</strong><span>Significant room for improvement remains in MAFC.</span></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{rethink_mafc_eval_2026,
+  title={Novel Claim or Déjà Vu? Rethinking "Contamination-Free" Dynamic Evaluation for Multimodal Automated Fact-Checking}, 
+  author={He, Haorui and Chen, Xinwen and Wen, Dacheng and Cheng, Reynold and Lau, Francis C. M. and Li, Yupeng},
+  booktitle={Proc.~of MM},
+  year={2026},
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
