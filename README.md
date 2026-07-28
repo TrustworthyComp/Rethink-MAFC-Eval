@@ -1,6 +1,16 @@
-# 🔍 Rethink-MAFC-Eval
+# [MM-2026] Novel Claim or Déjà Vu? Rethinking "Contamination-Free'' Dynamic Evaluation for Multimodal Automated Fact-Checking 🧐
 
-Code for the paper: *Novel Claim or Déjà Vu? Rethinking "Contamination-Free" Dynamic Evaluation for Multimodal Automated Fact-Checking*.
+[![arXiv](https://img.shields.io/badge/arXiv-2607.23514-B31B1B.svg)](https://arxiv.org/abs/2607.23514)
+[![GitHub](https://img.shields.io/badge/GitHub-Rethink_MAFC_Eval-181717.svg)](https://github.com/TrustworthyComp/Rethink-MAFC-Eval)
+[![Website](https://img.shields.io/badge/Project%20Page-Rethink_MAFC_Eval-1DA1F2.svg)](https://trustworthycomp.github.io/Rethink-MAFC-Eval/)
+
+This repository contains the official implementation of the MM-2026 paper, **Novel Claim or Déjà Vu? Rethinking "Contamination-Free'' Dynamic Evaluation for Multimodal Automated Fact-Checking**.
+
+## News 🔥
+
+- **2026-07-26** 📄 – Preprint released on [arXiv](https://arxiv.org/abs/2607.23514).
+- **2026-07-23** 🏆 – Accepted by MM-2026; see you in Brazil! 🇧🇷
+- **2026-07-15** 🎉 – Source code is publicly released; contributions and feedback are welcome!
 
 This pipeline extracts evidence from LLM-generated fact-checking articles and measures how similar the extracted evidence is to a reference set, using either **METEOR** or **embedding cosine similarity** (Hungarian matching).
 
