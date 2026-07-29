@@ -4,7 +4,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-Rethink_MAFC_Eval-181717.svg)](https://github.com/TrustworthyComp/Rethink-MAFC-Eval)
 [![Website](https://img.shields.io/badge/Project%20Page-Rethink_MAFC_Eval-1DA1F2.svg)](https://trustworthycomp.github.io/Rethink-MAFC-Eval/)
 
-This repository contains the official implementation of the MM-2026 paper, **Novel Claim or Déjà Vu? Rethinking "Contamination-Free'' Dynamic Evaluation for Multimodal Automated Fact-Checking**.
+This repository contains the official implementation of the MM-2026 paper, **Novel Claim or Déjà Vu? Rethinking ''Contamination-Free'' Dynamic Evaluation for Multimodal Automated Fact-Checking**.
 
 ## News 🔥
 
@@ -121,7 +121,7 @@ If you find this work useful, please cite our paper presented at ACM MM 2026:
 
 ```bibtex
 @inproceedings{rethink_mafc_eval_2026,
-  title={Novel Claim or Déjà Vu? Rethinking "Contamination-Free" Dynamic Evaluation for Multimodal Automated Fact-Checking},
+  title={Novel Claim or Déjà Vu? Rethinking ''Contamination-Free'' Dynamic Evaluation for Multimodal Automated Fact-Checking},
   author={He, Haorui and Chen, Xinwen and Wen, Dacheng and Cheng, Reynold and Lau, Francis C. M. and Li, Yupeng},
   booktitle={Proc.~of MM},
   year={2026},
