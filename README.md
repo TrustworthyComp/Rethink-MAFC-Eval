@@ -2,7 +2,9 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2607.23514-B31B1B.svg)](https://arxiv.org/abs/2607.23514)
 [![GitHub](https://img.shields.io/badge/GitHub-Rethink_MAFC_Eval-181717.svg)](https://github.com/TrustworthyComp/Rethink-MAFC-Eval)
+[![HF Daily Paper](https://img.shields.io/badge/Hugging%20Face-Rethink_MAFC_Eval-yellow.svg)](https://huggingface.co/papers/2607.23514)
 [![Website](https://img.shields.io/badge/Project%20Page-Rethink_MAFC_Eval-1DA1F2.svg)](https://trustworthycomp.github.io/Rethink-MAFC-Eval/)
+
 
 This repository contains the official implementation of the MM-2026 paper, **Novel Claim or Déjà Vu? Rethinking ''Contamination-Free'' Dynamic Evaluation for Multimodal Automated Fact-Checking**.
 
@@ -14,7 +16,7 @@ This repository contains the official implementation of the MM-2026 paper, **Nov
 
 This pipeline extracts evidence from LLM-generated fact-checking articles and measures how similar the extracted evidence is to a reference set, using either **METEOR** or **embedding cosine similarity** (Hungarian matching).
 
-📊 Our curated ClaimReview 2025Q4 dataset is available at [`data/input/claim_review_2025q4.json`](data/input/claim_review_2025q4.json).
+📊 Our curated ClaimReview 2025Q4 dataset is available on Hugging Face: [TrustworthyComp/ClaimReview2025Q4](https://huggingface.co/datasets/TrustworthyComp/ClaimReview2025Q4).
 
 ## ⚙️ Setup
 
